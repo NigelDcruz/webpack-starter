@@ -17,7 +17,16 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: [
+                            [
+                                '@babel/preset-env',
+
+                                {
+                                    useBuiltIns: 'usage', //You can add 'entry' and use manual imports
+                                    corejs: { version: 3}
+                                }
+                            ]
+                        ]
                     }
                 }
             },
@@ -30,13 +39,13 @@ module.exports = {
                         loader: "css-loader", // translates CSS into CommonJS
                         options: {
                             sourceMap: true,
-                          },
+                        },
                     },
                     {
                         loader: "sass-loader", // compiles Sass to CSS
                         options: {
                             sourceMap: true,
-                          },
+                        },
                     }
                 ]
             },
