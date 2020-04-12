@@ -22,7 +22,7 @@ module.exports = {
                                 '@babel/preset-env',
 
                                 {
-                                    useBuiltIns: 'usage', //You can add 'entry' and use manual imports
+                                    useBuiltIns: 'usage', //You can add 'entry' and use manual imports. Specially when you import third party library.
                                     corejs: { version: 3}
                                 }
                             ]
