@@ -1,0 +1,21 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "This project should be used for starting a project. Configured with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build-prod": "webpack --config webpack.config.prod.js",
+    "start": "webpack-dev-server --open"
+  },
+  "author": "Nigel D'cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
