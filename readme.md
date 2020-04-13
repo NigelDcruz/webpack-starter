@@ -3,6 +3,11 @@
 - Run ```npm install```
 - We do this to install all npm packages since the node_modules foler is deleted at the time of pushing the project to github since the node_modules folder is huge.
 
+## Git Config
+
+- Add your new remote by running ```git remote set-url --add origin ADD_NEW_URL_HERE```
+- Remove the previous repo link by running: ```git remote set-url --delete origin https://github.com/NigelDcruz/webpack-starter.git```
+
 ## npm
 
 - Define Entry point based on you project
